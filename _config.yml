@@ -1,0 +1,6 @@
+title: Luke
+description: Legal documents for the Luke iPhone app
+theme: jekyll-theme-minimal
+markdown: kramdown
+kramdown:
+  input: GFM
