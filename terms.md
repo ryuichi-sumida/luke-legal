@@ -8,6 +8,7 @@ permalink: /terms/
 **Last updated: September 2026**
 
 
+
 ## Acceptance
 
 By installing or using Luke, you agree to these Terms of Use. If you do not agree, please do not use the app.
