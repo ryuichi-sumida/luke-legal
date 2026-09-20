@@ -7,6 +7,7 @@ permalink: /terms/
 
 **Last updated: September 2026**
 
+
 ## Acceptance
 
 By installing or using Luke, you agree to these Terms of Use. If you do not agree, please do not use the app.
@@ -17,7 +18,7 @@ Luke is licensed, not sold, to you. We grant you a personal, non-exclusive, non-
 
 ## How Luke Works
 
-Luke downloads its on-device AI models after first launch and checks for model updates when it opens. All AI features run locally on your iPhone; there is no chat server and no cloud inference. Your memory library stays on your device and we never receive it. See the Privacy Policy for the few things that do leave your iPhone (Apple place lookups, model downloads, and copies you choose to make).
+Luke's AI models ship inside the app; the chat model downloads only when you turn on Talk or calls, and Luke checks for model updates when it opens. All AI features run locally on your iPhone; there is no chat server and no cloud inference. Your memory library stays on your device and we never receive it. See the Privacy Policy for the few things that do leave your iPhone (Apple place lookups, model downloads, and copies you choose to make).
 
 ## Luke Pro Subscription
 

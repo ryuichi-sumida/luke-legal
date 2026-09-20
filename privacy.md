@@ -4,15 +4,15 @@ permalink: /privacy/
 ---
 # Luke Privacy Policy
 
-**Last updated:** September 12, 2026
+**Last updated:** September 20, 2026
 
 Luke ("the App") is developed and published by Ryuichi Sumida, an individual developer based in Kyoto, Japan ("we", "us"). This policy explains what information the App handles, what stays on your iPhone, what leaves it and why, and the choices you have. It applies to Luke on the App Store worldwide. Region-specific information for the United States and Japan is at the end.
 
 ## Summary
 
 - Luke keeps your memory library on your iPhone. We run no server, have no account system, and never receive your photos, conversations, memories, journal, location history, recordings, face data, or voice data.
-- Nothing leaves your iPhone except: limited requests to Apple (coordinates for place names, search text when you label a place, and speech language assets); model downloads from Hugging Face and GitHub, which see your IP address; and copies you choose to make or allow (Agent Access, Export, Back Up, and iOS device backups you have turned on).
-- No analytics, no advertising, no tracking, no sale of data, and no use of your data to train any model.
+- Nothing leaves your iPhone except: limited requests to Apple (coordinates for place names, search text when you label a place, and speech language assets); the chat model and voice assets downloaded from Hugging Face if you turn on Talk or calls, which sees your IP address; and copies you choose to make or allow (Agent Access, Export, Back Up, and iOS device backups you have turned on).
+- No advertising, no tracking, no sale of data, and no use of your data to train any model. Anonymous usage statistics are sent only if you turn them on (off by default) and never include your content.
 - You can delete everything in the App with Settings → Privacy & Data → Clear All Data, or by uninstalling the App.
 
 ## Information Stored on Your Device
@@ -23,7 +23,7 @@ This data lives inside the iOS app sandbox, encrypted by iOS with your device pa
 
 ## On-Device AI
 
-All AI features (chat, voice conversation, memory extraction, photo understanding, timeline and life analysis) run on your iPhone, using open-weight models downloaded to your device and Apple's built-in on-device models. No prompt, photo, transcript, or memory is sent to an external AI service by Luke, and nothing you do in Luke is used by us to train any model.
+All AI features (chat, voice conversation, memory extraction, photo understanding, timeline and life analysis) run on your iPhone, using open-weight models that ship inside the app (photo, memory and speaker models) or are downloaded to your device when you turn on Talk or calls (the chat model and voice assets), plus Apple's built-in on-device models. No prompt, photo, transcript, or memory is sent to an external AI service by Luke, and nothing you do in Luke is used by us to train any model.
 
 ## Photos and Camera
 
@@ -63,14 +63,15 @@ Luke has no server of its own. Your device connects to the following services, a
 
 | Purpose | Who receives the request | What they receive |
 | --- | --- | --- |
-| Downloading on-device AI models and voice assets during setup, when a model is updated, and if a file needs re-downloading | Hugging Face (huggingface.co), GitHub (github.com) | Your IP address and standard download request metadata. No personal content. |
+| Downloading the chat model and voice assets when you turn on Talk or calls, when a model is updated, and if a file needs re-downloading. The photo, memory and speaker models ship inside the app and are never downloaded. | Hugging Face (huggingface.co) | Your IP address and standard download request metadata. No personal content. |
 | Checking for model updates at launch (a small manifest file) | Hugging Face | Your IP address and request metadata. |
 | Place names and place search | Apple | Coordinates of visits; search text and map area when you label a place. |
 | Speech language assets | Apple | Asset downloads only. Audio is never sent. |
 | Luke Pro subscription | Apple App Store | Apple processes the purchase. The App receives only the subscription status on your device. We never see your payment details or Apple ID. |
 | Agent Access (off by default) | A tool on your own computer | See below. |
+| Weekly anonymous usage summary (off by default; only if you turn on Share Anonymous Usage Data) | TelemetryDeck GmbH (telemetrydeck.com), Germany | Feature-usage day counts, action counts, technical failure codes, average response times, Pro status, device model, iOS and App version, language, and a random one-time identifier. No content. Like any internet request it carries your IP address; TelemetryDeck states that it does not store IP addresses. |
 
-The large chat model (about 3.4 GB) and the voice models wait for Wi-Fi unless you allow cellular downloads. Small models (tens of megabytes) and the launch-time update check may use any connection.
+The chat model (about 3.4 GB) and the voice models wait for Wi-Fi unless you allow cellular downloads. The launch-time update check may use any connection.
 
 ## Agent Access
 
@@ -85,9 +86,13 @@ Agents can read but never change your data. Luke does not publish the address to
 - **iOS and iCloud device backups:** if you have iCloud Backup or computer backups turned on, iOS includes Luke's data (database, audio, voice feature data, and settings, but not the downloaded models) in those backups, encrypted and handled by Apple under Apple's terms.
 - **Deleting in Luke does not delete copies you have already made** with Back Up, Export, Agent Access, or device backups, and it never touches your Photos library.
 
-## No Analytics, Tracking, or Advertising
+## Anonymous Usage Statistics (Optional)
 
-The App contains no analytics, crash reporting, or advertising SDKs, sets no cookies or identifiers, and does not track you across apps or websites. We do not sell or share personal information and we do not engage in targeted advertising. Because nothing is tracked, Do Not Track and Global Privacy Control signals change nothing; your data is already not collected.
+The App contains no advertising SDKs, sets no cookies, and does not track you across apps or websites. We do not sell or share personal information and we do not engage in targeted advertising.
+
+Sharing usage statistics is **off by default**. If you turn on Share Anonymous Usage Data (offered during setup and available in Settings → Privacy & Data), the App sends one anonymous summary per week to TelemetryDeck GmbH, a privacy-focused analytics provider in Germany. The summary contains: which features you used and on how many days that week; counts of actions such as messages sent, calls started, recordings, imports, and backups; technical failure codes (for example a paused photo analysis or a failed model download); average response times; whether Luke Pro is active; and your device model, iOS version, App version, and language. Each summary carries a random identifier generated for that summary alone, so summaries cannot be linked to you, your device, or to each other. Summaries never include photos, messages, prompts, answers, recordings, names, places, or any other content. Nothing is counted while the setting is off. Turning it off stops counting immediately and discards the unsent week. We use these statistics only to understand which features are used and what fails. Because this data cannot identify you, Do Not Track and Global Privacy Control signals do not change it.
+
+Apple may share crash reports with us if you chose to share analytics with app developers in iOS Settings; that sharing is controlled by Apple.
 
 Notifications are generated on your device. Luke does not send notifications from a server.
 
@@ -109,13 +114,13 @@ Luke is not directed to children under 13, and we do not knowingly collect perso
 
 ## Your Rights and Choices
 
-You control your Luke data directly in the App: view, correct, export, and delete it there, because that is the only place it exists. Permissions for Photos, Location, Microphone, Speech Recognition, Camera, Local Network, and Notifications can be changed at any time in iOS Settings. For information we actually hold, which is limited to support correspondence, you can ask us to access, correct, or delete it at the address below, and we will respond as applicable law requires.
+You control your Luke data directly in the App: view, correct, export, and delete it there, because that is the only place it exists. Permissions for Photos, Location, Microphone, Speech Recognition, Camera, Local Network, and Notifications can be changed at any time in iOS Settings. For information we actually hold, which is limited to support correspondence, you can ask us to access, correct, or delete it at the address below, and we will respond as applicable law requires. Sharing anonymous usage statistics is optional; turn it off at any time in Settings → Privacy & Data.
 
 ## Additional Information for Users in the United States
 
 This section supplements the policy for residents of US states with privacy laws, to the extent those laws apply to us.
 
-- **Personal information we collect:** support correspondence only (contact details and message content), used to provide support. Everything else described in this policy is processed and stored on your device and is not disclosed to us.
+- **Personal information we collect:** support correspondence only (contact details and message content), used to provide support. Everything else described in this policy is processed and stored on your device and is not disclosed to us. Anonymous usage statistics (if you turn them on) contain no identifiers and are not personal information.
 - **Sale or sharing:** we do not sell personal information and do not share it for cross-context behavioral advertising, and have not in the preceding 12 months.
 - **Sensitive personal information:** precise location, face and voice feature data, and audio are processed on your device for the App's functionality at your request. They are not disclosed to us.
 - **Your requests:** rights to know, access, correct, delete, and port apply to the support correspondence we hold; email us. Your on-device data is under your direct control in the App. We will never discriminate against you for exercising a privacy right.
@@ -128,14 +133,14 @@ This section supplements the policy under the Act on the Protection of Personal 
 
 - **Business operator:** Ryuichi Sumida (individual). Address is provided without delay upon request.
 - **Personal information we receive and its purpose of use:** support correspondence (email address, name if given, message and attachments), used solely to respond and to investigate the reported issue.
-- **Provision to third parties and joint use:** none. **Service providers:** we use Google's Gmail service to receive and store support email; Google's servers may be located outside Japan, mainly in the United States.
-- **Servers outside Japan contacted by your device:** when downloading models or using Apple features, your device communicates with servers operated by Apple, Hugging Face, and GitHub, which may be located in the United States, as described in Network Connections. We do not send your personal data to them.
+- **Provision to third parties and joint use:** none. **Service providers:** we use Google's Gmail service to receive and store support email; Google's servers may be located outside Japan, mainly in the United States. If you turn on anonymous usage statistics, TelemetryDeck GmbH (Germany) receives them; they contain no personal data.
+- **Servers outside Japan contacted by your device:** when downloading models or using Apple features, your device communicates with servers operated by Apple and Hugging Face, which may be located in the United States, and, if you turn on anonymous usage statistics, by TelemetryDeck GmbH in Germany, as described in Network Connections. We do not send your personal data to them.
 - **Requests regarding retained personal data:** we retain no personal data other than support correspondence. Requests for disclosure, correction, suspension of use, or deletion of that correspondence, and complaints, are accepted at the contact address below, free of charge, after identity verification.
 - **Governing language:** if the Japanese translation and this English policy differ, this English version prevails.
 
 ## Third-Party Services
 
-Your use of Apple services is governed by Apple's Privacy Policy (https://www.apple.com/legal/privacy/). Downloads from Hugging Face and GitHub are governed by their respective privacy policies (https://huggingface.co/privacy and https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement). Support email is handled under Google's Privacy Policy (https://policies.google.com/privacy).
+Your use of Apple services is governed by Apple's Privacy Policy (https://www.apple.com/legal/privacy/). Downloads from Hugging Face are governed by its privacy policy (https://huggingface.co/privacy). Support email is handled under Google's Privacy Policy (https://policies.google.com/privacy). Anonymous usage statistics, if you turn them on, are processed by TelemetryDeck GmbH under its privacy policy (https://telemetrydeck.com/privacy/).
 
 ## Changes to This Policy
 
