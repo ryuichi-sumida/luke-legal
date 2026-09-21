@@ -21,11 +21,11 @@ Luke's AI models ship inside the app; the chat model downloads only when you tur
 
 ## Luke Pro Subscription
 
-Luke Pro is offered as an auto-renewable monthly subscription at the price displayed in the App Store for your region. New subscribers receive a 7-day free trial; payment is charged to your Apple ID at the end of the free trial unless cancelled at least 24 hours before it ends. Your subscription automatically renews each month thereafter unless cancelled at least 24 hours before the end of the current period. You can manage and cancel your subscription in your Apple ID settings under Subscriptions. No refund is provided for the unused portion of any subscription period, except as required by law.
+Luke Pro is offered as an auto-renewable monthly or yearly subscription at the price displayed in the App Store for your region. New subscribers receive a 7-day free trial; payment is charged to your Apple ID at the end of the free trial unless cancelled at least 24 hours before it ends. Your subscription automatically renews for the same period thereafter unless cancelled at least 24 hours before the end of the current period. You can manage and cancel your subscription in your Apple ID settings under Subscriptions. No refund is provided for the unused portion of any subscription period, except as required by law.
 
 ## What Pro Unlocks
 
-Luke Pro unlocks voice calls with Luke and Agent Access (letting AI tools on your own computer search your memories). Everything else, including capture controls, App Lock, export, backup, and deletion, is free and stays free. Pro features run on your device like the rest of Luke.
+Luke Pro removes the daily limit on conversations with Luke and unlocks Agent Access (letting AI tools on your own computer search your memories). On the free plan, Luke completes up to 50 replies a day, text and voice calls combined; only replies Luke finishes count, the count resets at midnight, and a call already in progress is never cut off. Everything else, including voice calls, recorded conversations, capture controls, App Lock, export, backup, and deletion, is free and stays free. Pro features run on your device like the rest of Luke.
 
 ## Acceptable Use
 
