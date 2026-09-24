@@ -25,7 +25,7 @@ Luke Pro is offered as an auto-renewable monthly or yearly subscription at the p
 
 ## What Pro Unlocks
 
-Luke Pro removes the daily limit on conversations with Luke and unlocks Agent Access (letting AI tools on your own computer search your memories). On the free plan, Luke completes up to 50 replies a day, text and voice calls combined; only replies Luke finishes count, the count resets at midnight, and a call already in progress is never cut off. Everything else, including voice calls, recorded conversations, capture controls, App Lock, export, backup, and deletion, is free and stays free. Pro features run on your device like the rest of Luke.
+Luke Pro removes the daily limit on conversations with Luke and unlocks Agent Access (letting AI tools on your own computer search your memories). On the free plan, text conversations and voice calls each have a daily limit; only replies Luke finishes count toward the text limit, both limits reset at midnight, and a call already in progress is never cut off. Everything else, including voice calls, recorded conversations, capture controls, App Lock, export, backup, and deletion, is free and stays free. Pro features run on your device like the rest of Luke.
 
 ## Acceptable Use
 
